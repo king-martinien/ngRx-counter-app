@@ -1,0 +1,20 @@
+<div class="flex gap-4 mb-5">
+  <input type="number" name="customCounter" placeholder="Custom counter" class="rounded-md px-4"
+         [(ngModel)]="inputValue">
+  <div class="relative">
+    <select name="actionType" class="bg-white px-3 pr-10 rounded-md appearance-none h-full font-semibold"
+            [(ngModel)]="actionType">
+      <option value="add">ADD</option>
+      <option value="remove">REMOVE</option>
+    </select>
+    <svg width="16" height="16" fill="none" viewBox="0 0 24 24"
+         class="absolute top-1/2 -translate-y-1/2 right-2 pointer-events-none">
+      <path fill="#000"
+            d="M18.593 8.195a1 1 0 0 1 .212 1.398 53.178 53.178 0 0 1-2.457 3.063c-.662.762-1.396 1.55-2.081 2.156-.342.302-.695.58-1.04.787-.316.19-.751.401-1.227.401-.476 0-.912-.21-1.228-.401a7.383 7.383 0 0 1-1.039-.787c-.685-.606-1.42-1.394-2.081-2.156a53.24 53.24 0 0 1-2.457-3.063A1 1 0 0 1 6 8h12c.206 0 .414.063.593.195Z"/>
+    </svg>
+  </div>
+  <button (click)="onIncrement()"
+          class="flex items-center gap-1 px-4 h-10 bg-blue-900 text-white transition-colors duration-300 rounded-md font-medium">
+    <span>proceed</span>
+  </button>
+</div>

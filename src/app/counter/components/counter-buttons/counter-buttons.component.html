@@ -1,0 +1,40 @@
+<div class="flex justify-center flex-col md:flex-row gap-1 md:gap-4 mb-10">
+  <button (click)="onIncrement()"
+          class="flex items-center gap-1 px-4 h-10 bg-blue-900 text-white transition-colors duration-300 rounded-md font-medium">
+    <span>Increment</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v8m4-4H8"/>
+      <path stroke="currentColor" stroke-width="1.5"
+            d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109C18.717 21.5 16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391C2.5 18.717 2.5 16.479 2.5 12Z"/>
+    </svg>
+  </button>
+  <button (click)="onDecrement()"
+          class="flex items-center gap-1 px-4 h-10 bg-blue-900 text-white transition-colors duration-300 rounded-md font-medium">
+    <span>Decrement</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 12H8"/>
+      <path stroke="currentColor" stroke-width="1.5"
+            d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109C18.717 21.5 16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391C2.5 18.717 2.5 16.479 2.5 12Z"/>
+    </svg>
+  </button>
+  <button (click)="onReset()"
+          class="flex items-center gap-1 px-4 h-10 bg-red-600 text-white transition-colors duration-300 rounded-md font-medium">
+    <span>Reset</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+            d="M16.977 19.5A9 9 0 0 0 10 3.223M16.977 19.5V16m0 3.5H20.5M7 4.516a9 9 0 0 0 7 16.261M7 4.516V8m0-3.484H3.5"/>
+    </svg>
+  </button>
+  <button (click)="onRename()"
+          class="flex items-center gap-1 px-4 h-10 bg-blue-700 text-white transition-colors duration-300 rounded-md font-medium">
+    <span>Rename</span>
+    <svg width="16" height="16" fill="none" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="1.5"/>
+      <circle cx="14" cy="16" r="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="1.5"/>
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M8.009 9H8m8 0h-.009"/>
+    </svg>
+  </button>
+</div>
